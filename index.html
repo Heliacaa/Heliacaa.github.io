@@ -1,42 +1,442 @@
 <!DOCTYPE html>
-<html lang="tr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Heliacaa | Portfolyo</title>
+    <meta name="description" content="Beyazıt Tur's software engineering portfolio, selected projects, readable CV, publications, and contact links.">
+    <title>Beyazıt Tur | Software Engineer Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-    <header>
-        <div class="container">
-            <h1>Heliacaa</h1>
-            <p>Yazılım Geliştirici & Teknoloji Meraklısı</p>
-            <div class="social-links">
-                <a href="https://github.com/Heliacaa" target="_blank"><i class="fab fa-github"></i></a>
-                <!-- Diğer sosyal medya linkleri buraya eklenebilir -->
-            </div>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header" id="top">
+        <div class="container nav-shell">
+            <a class="brand" href="#top" aria-label="Beyazıt Tur home">
+                <span class="brand-mark">BT</span>
+                <span>Beyazıt Tur</span>
+            </a>
+            <nav class="site-nav" aria-label="Primary navigation">
+                <a href="#about">About</a>
+                <a href="#projects">Projects</a>
+                <a href="#cv">CV</a>
+                <a href="#contact">Contact</a>
+            </nav>
         </div>
     </header>
 
-    <main class="container">
-        <section id="about">
-            <h2>Hakkımda</h2>
-            <p>Merhaba! Ben bir yazılım geliştiricisiyim. GitHub üzerindeki projelerimi ve çalışmalarımı burada paylaşıyorum. Yeni teknolojiler öğrenmeyi ve açık kaynak projelere katkıda bulunmayı seviyorum.</p>
+    <main id="main">
+        <section class="hero" aria-labelledby="hero-title">
+            <div class="container hero-inner">
+                <div class="identity-lockup">
+                    <img class="hero-avatar" src="https://github.com/Heliacaa.png" alt="Beyazıt Tur GitHub avatar" loading="eager">
+                    <div>
+                        <p class="eyebrow">Software Engineering Portfolio</p>
+                        <h1 id="hero-title">Beyazıt Tur</h1>
+                    </div>
+                </div>
+
+                <p class="hero-title">Computer Engineering graduate building full-stack, mobile, data, and AI-backed systems.</p>
+                <p class="hero-copy">
+                    I work across Spring Boot services, React and Next.js interfaces, Flutter mobile apps, database-backed workflows,
+                    test automation, and reliability-minded product architecture. My recent work includes internships at Turkcell and Innova,
+                    an offline-first emergency operations platform, and a public transit analytics paper published on IEEE Xplore.
+                </p>
+
+                <div class="hero-actions" aria-label="Portfolio actions">
+                    <a class="button button-primary" href="#projects">
+                        <i class="fa-solid fa-diagram-project" aria-hidden="true"></i>
+                        View Projects
+                    </a>
+                    <a class="button button-secondary" href="#cv">
+                        <i class="fa-solid fa-file-lines" aria-hidden="true"></i>
+                        Read CV
+                    </a>
+                    <a class="button button-quiet" href="https://github.com/Heliacaa" target="_blank" rel="noopener noreferrer">
+                        <i class="fa-brands fa-github" aria-hidden="true"></i>
+                        GitHub
+                    </a>
+                </div>
+            </div>
         </section>
 
-        <section id="projects">
-            <h2>Projelerim</h2>
-            <div id="projects-container" class="projects-grid">
-                <!-- Projeler JavaScript ile buraya yüklenecek -->
-                <div class="loader"></div>
+        <section class="signal-strip" aria-label="Portfolio highlights">
+            <div class="container signals">
+                <div>
+                    <strong>2026</strong>
+                    <span>B.Sc. Computer Engineering, graduated June</span>
+                </div>
+                <div>
+                    <strong>2</strong>
+                    <span>software developer internships in 2025</span>
+                </div>
+                <div>
+                    <strong>96M+</strong>
+                    <span>transit records analyzed in academic research</span>
+                </div>
+                <div>
+                    <strong>Full stack</strong>
+                    <span>Spring Boot, Next.js, Flutter, Firebase, PostgreSQL</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section-light" id="about" aria-labelledby="about-title">
+            <div class="container about-layout">
+                <div class="section-copy">
+                    <p class="eyebrow">About</p>
+                    <h2 id="about-title">I like systems that stay useful when real life gets messy.</h2>
+                    <p>
+                        My strongest work sits where backend architecture, databases, mobile/web interfaces, and operational reliability meet.
+                        I have built user-facing products, API layers, data pipelines, dashboards, and AI-assisted workflows with an emphasis on
+                        clear service boundaries, secure data handling, and maintainable implementation.
+                    </p>
+                    <p>
+                        I am especially interested in reliable submission flows, offline-first products, reproducible development environments,
+                        and tools that help people turn raw data into practical decisions.
+                    </p>
+                </div>
+
+                <aside class="focus-panel" aria-label="Core focus areas">
+                    <h3>Core Focus</h3>
+                    <div class="focus-tags">
+                        <span>Backend APIs</span>
+                        <span>Database Design</span>
+                        <span>Mobile Apps</span>
+                        <span>Testing &amp; QA</span>
+                        <span>AI/RAG Workflows</span>
+                        <span>Product Reliability</span>
+                    </div>
+                </aside>
+            </div>
+        </section>
+
+        <section class="section" id="projects" aria-labelledby="projects-title">
+            <div class="container">
+                <div class="section-heading">
+                    <div>
+                        <p class="eyebrow">Selected Work</p>
+                        <h2 id="projects-title">Projects with product and engineering depth</h2>
+                    </div>
+                    <a class="text-link" href="https://github.com/Heliacaa" target="_blank" rel="noopener noreferrer">
+                        <i class="fa-brands fa-github" aria-hidden="true"></i>
+                        All GitHub repositories
+                    </a>
+                </div>
+
+                <div class="project-grid">
+                    <article class="project-card">
+                        <div class="project-kicker">Graduation Project</div>
+                        <h3>ATLAS - Offline-First Emergency Operations Platform</h3>
+                        <p>
+                            Multi-platform disaster response system for field teams and operations staff, built around reliable form capture,
+                            local caching, connectivity-aware sync, maps, logs, approvals, and audit trails.
+                        </p>
+                        <ul class="compact-list">
+                            <li>Flutter mobile app, Next.js/TypeScript web panel, Firebase/Firestore infrastructure managed with Terraform.</li>
+                            <li>Offline-first flow with local submission state, automatic Firestore sync, and unit tests for critical submission, repository, and Firestore workflows.</li>
+                        </ul>
+                        <div class="tech-list" aria-label="ATLAS technologies">
+                            <span>Flutter</span>
+                            <span>Next.js</span>
+                            <span>Firebase</span>
+                            <span>Terraform</span>
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <div class="project-kicker">Research / CE477</div>
+                        <h3>Istanbul Transit Analytics</h3>
+                        <p>
+                            End-to-end data mining pipeline analyzing 96M+ hourly public transit records representing 1.1B passenger events.
+                            The resulting paper was presented at ICHORA 2026 and published on IEEE Xplore.
+                        </p>
+                        <ul class="compact-list">
+                            <li>Reached 81.14% classification accuracy and R2 = 0.9272 in demand regression.</li>
+                            <li>Used SARIMA forecasting with 5.83% MAPE, K-Means clustering, and Apriori association mining.</li>
+                        </ul>
+                        <div class="project-actions">
+                            <a href="https://github.com/EdizArkin/istanbul-transit-analytics-ai" target="_blank" rel="noopener noreferrer">
+                                <i class="fa-brands fa-github" aria-hidden="true"></i>
+                                Repository
+                            </a>
+                        </div>
+                        <div class="tech-list" aria-label="Istanbul Transit Analytics technologies">
+                            <span>Python</span>
+                            <span>Pandas</span>
+                            <span>Scikit-learn</span>
+                            <span>SARIMA</span>
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <div class="project-kicker">Personal Project</div>
+                        <h3>SentixInvest - AI-Powered Investment Platform</h3>
+                        <p>
+                            Full-stack investment platform with portfolio-aware AI chat, RAG retrieval, real-time market data aggregation,
+                            risk analytics, sentiment analysis, and payment integration.
+                        </p>
+                        <ul class="compact-list">
+                            <li>Spring Boot product backend connected to a FastAPI MCP service for market, news, RAG, and analytics workflows.</li>
+                            <li>PostgreSQL with pgvector, Redis caching, Flutter mobile UI, and Docker Compose for local orchestration.</li>
+                        </ul>
+                        <div class="project-actions">
+                            <a href="https://github.com/Heliacaa/PersonalFinanceApp" target="_blank" rel="noopener noreferrer">
+                                <i class="fa-brands fa-github" aria-hidden="true"></i>
+                                Repository
+                            </a>
+                        </div>
+                        <div class="tech-list" aria-label="SentixInvest technologies">
+                            <span>Flutter</span>
+                            <span>Spring Boot</span>
+                            <span>FastAPI</span>
+                            <span>PostgreSQL</span>
+                            <span>Redis</span>
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <div class="project-kicker">Personal Project</div>
+                        <h3>Trendyol Clone - Multi-Vendor E-Commerce Platform</h3>
+                        <p>
+                            Marketplace-style platform with customer, seller, and admin portals sharing a secured API layer,
+                            PostgreSQL data model, payment flow, AI chatbot, and CI/CD setup.
+                        </p>
+                        <ul class="compact-list">
+                            <li>Three Next.js apps plus an Express.js REST API with shared contracts in a monorepo-style architecture.</li>
+                            <li>JWT auth, refresh-token rotation, Zod validation, rate limiting, Iyzico 3D Secure, Docker, and GitHub Actions.</li>
+                        </ul>
+                        <div class="project-actions">
+                            <a href="https://github.com/Heliacaa/Trendyol-Clone" target="_blank" rel="noopener noreferrer">
+                                <i class="fa-brands fa-github" aria-hidden="true"></i>
+                                Repository
+                            </a>
+                        </div>
+                        <div class="tech-list" aria-label="Trendyol Clone technologies">
+                            <span>Next.js</span>
+                            <span>TypeScript</span>
+                            <span>Express.js</span>
+                            <span>Prisma</span>
+                            <span>PostgreSQL</span>
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <div class="project-kicker">Academic Project / CE316</div>
+                        <h3>OmnIDE - Assignment Management System</h3>
+                        <p>
+                            Cross-platform desktop IDE for programming assignments, automated evaluation, and batch processing of student submissions.
+                        </p>
+                        <ul class="compact-list">
+                            <li>React/TypeScript frontend with Material UI and Python/FastAPI backend.</li>
+                            <li>Automated compilation, execution, and scoring against reference solutions across multiple languages.</li>
+                        </ul>
+                        <div class="project-actions">
+                            <a href="https://github.com/DeveloperLabb/OmnIDEv1.1" target="_blank" rel="noopener noreferrer">
+                                <i class="fa-brands fa-github" aria-hidden="true"></i>
+                                Repository
+                            </a>
+                        </div>
+                        <div class="tech-list" aria-label="OmnIDE technologies">
+                            <span>React</span>
+                            <span>TypeScript</span>
+                            <span>FastAPI</span>
+                            <span>Electron</span>
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <div class="project-kicker">Personal Project</div>
+                        <h3>AI-Powered CV Builder</h3>
+                        <p>
+                            Intelligent CV generation tool with a responsive React interface, TypeScript structure, dynamic content generation,
+                            and real-time preview for professional resume creation.
+                        </p>
+                        <div class="project-actions">
+                            <a href="https://github.com/Heliacaa/cv-builder" target="_blank" rel="noopener noreferrer">
+                                <i class="fa-brands fa-github" aria-hidden="true"></i>
+                                Repository
+                            </a>
+                        </div>
+                        <div class="tech-list" aria-label="AI-Powered CV Builder technologies">
+                            <span>React</span>
+                            <span>TypeScript</span>
+                            <span>AI Integration</span>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section-light" id="github" aria-labelledby="github-title">
+            <div class="container">
+                <div class="section-heading">
+                    <div>
+                        <p class="eyebrow">GitHub Activity</p>
+                        <h2 id="github-title">More repositories</h2>
+                    </div>
+                    <span class="section-note">Latest public work beyond the selected case studies.</span>
+                </div>
+                <div id="github-repos" class="repo-grid" aria-live="polite">
+                    <div class="loading-row">
+                        <span class="loader" aria-hidden="true"></span>
+                        <span>Loading repositories</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="cv" aria-labelledby="cv-title">
+            <div class="container">
+                <div class="section-heading">
+                    <div>
+                        <p class="eyebrow">Readable CV</p>
+                        <h2 id="cv-title">Experience, education, publications, and skills</h2>
+                    </div>
+                    <a class="button button-secondary" href="Beyazit_Tur_CV_Final.pdf" target="_blank" rel="noopener noreferrer">
+                        <i class="fa-solid fa-file-arrow-down" aria-hidden="true"></i>
+                        Download CV
+                    </a>
+                </div>
+
+                <div class="cv-layout">
+                    <div class="cv-main">
+                        <section class="cv-block" aria-labelledby="experience-title">
+                            <h3 id="experience-title">Professional Experience</h3>
+                            <article class="timeline-item">
+                                <div>
+                                    <h4>Software Developer Intern</h4>
+                                    <p>Turkcell İletişim Hizmetleri A.Ş.</p>
+                                </div>
+                                <span>Jul 2025 - Aug 2025</span>
+                                <ul>
+                                    <li>Migrated a legacy application toward a modern Java Spring Boot architecture.</li>
+                                    <li>Designed RESTful APIs and backend services using Spring Boot, Spring Data JPA, and microservice patterns.</li>
+                                    <li>Worked with cross-functional teams in an Agile/Scrum environment.</li>
+                                </ul>
+                            </article>
+
+                            <article class="timeline-item">
+                                <div>
+                                    <h4>Software Developer Intern</h4>
+                                    <p>Innova Bilişim A.Ş.</p>
+                                </div>
+                                <span>Jun 2025 - Jul 2025</span>
+                                <ul>
+                                    <li>Built full-stack applications with Spring Boot, React.js, Material UI, and PostgreSQL.</li>
+                                    <li>Implemented JWT authentication, authorization, Spring Data JPA persistence, and responsive interfaces.</li>
+                                    <li>Set up Docker, Kubernetes, and Minikube development environments; built Selenium automation with Java and Python.</li>
+                                </ul>
+                            </article>
+
+                            <article class="timeline-item">
+                                <div>
+                                    <h4>WordPress Developer</h4>
+                                    <p>Freelance</p>
+                                </div>
+                                <span>Jun 2023 - Sep 2023</span>
+                                <ul>
+                                    <li>Developed and deployed custom WordPress themes and plugins for client requirements.</li>
+                                    <li>Delivered responsive, mobile-first websites with SEO and performance improvements.</li>
+                                </ul>
+                            </article>
+                        </section>
+
+                        <section class="cv-block" aria-labelledby="education-title">
+                            <h3 id="education-title">Education</h3>
+                            <article class="timeline-item compact">
+                                <div>
+                                    <h4>İzmir University of Economics</h4>
+                                    <p>B.Sc. in Computer Engineering, GPA 3.06/4.00</p>
+                                </div>
+                                <span>Sep 2022 - Jun 2026</span>
+                                <p class="timeline-note">Relevant coursework: Data Structures and Algorithms, Data Science, Digital Image Processing.</p>
+                            </article>
+                        </section>
+
+                        <section class="cv-block" aria-labelledby="publication-title">
+                            <h3 id="publication-title">Publication</h3>
+                            <article class="timeline-item compact">
+                                <div>
+                                    <h4>Temporal and Spatial Dynamics of Public Transit in Istanbul</h4>
+                                    <p>Published in the proceedings of the 8th International Congress on Human-Computer Interaction, Optimization and Robotic Applications, Ankara, May 2026.</p>
+                                    <p>
+                                        <a class="text-link" href="https://ieeexplore.ieee.org/document/11537204" target="_blank" rel="noopener noreferrer">
+                                            <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
+                                            View on IEEE Xplore
+                                        </a>
+                                    </p>
+                                </div>
+                            </article>
+                        </section>
+                    </div>
+
+                    <aside class="cv-sidebar" aria-label="Skills and languages">
+                        <section class="skill-group">
+                            <h3>Programming</h3>
+                            <p>Java, C#, Python, TypeScript, JavaScript, Dart, Swift</p>
+                        </section>
+                        <section class="skill-group">
+                            <h3>Backend</h3>
+                            <p>Spring Boot, .NET, Node.js/Express.js, FastAPI, REST APIs, microservices</p>
+                        </section>
+                        <section class="skill-group">
+                            <h3>Frontend &amp; Mobile</h3>
+                            <p>React.js, Next.js 14, TailwindCSS, Redux Toolkit, Material UI, Flutter</p>
+                        </section>
+                        <section class="skill-group">
+                            <h3>Data &amp; AI</h3>
+                            <p>PostgreSQL, SQLite, Firebase, Supabase, Redis, pgvector, RAG, LLM APIs, MCP</p>
+                        </section>
+                        <section class="skill-group">
+                            <h3>DevOps &amp; Tools</h3>
+                            <p>Docker, Kubernetes, GitHub Actions, Jenkins, Terraform</p>
+                        </section>
+                        <section class="skill-group">
+                            <h3>Testing &amp; QA</h3>
+                            <p>JUnit, Vitest, Selenium WebDriver, Postman, Testcontainers, unit testing, integration testing, API testing</p>
+                        </section>
+                        <section class="skill-group">
+                            <h3>Languages</h3>
+                            <p>Turkish: Native<br>English: Professional working proficiency<br>German: Elementary proficiency</p>
+                        </section>
+                    </aside>
+                </div>
+            </div>
+        </section>
+
+        <section class="section contact-section" id="contact" aria-labelledby="contact-title">
+            <div class="container contact-inner">
+                <div>
+                    <p class="eyebrow">Contact</p>
+                    <h2 id="contact-title">Open to software engineering, backend, data, and reliability-focused roles.</h2>
+                    <p>
+                        Based in İzmir, Turkey. Reach me by email or through GitHub and LinkedIn.
+                    </p>
+                </div>
+                <div class="contact-actions" aria-label="Contact links">
+                    <a class="button button-primary" href="mailto:beyazit.tur98@gmail.com">
+                        <i class="fa-regular fa-envelope" aria-hidden="true"></i>
+                        Email
+                    </a>
+                    <a class="button button-secondary" href="https://linkedin.com/in/beyazit-tur" target="_blank" rel="noopener noreferrer">
+                        <i class="fa-brands fa-linkedin" aria-hidden="true"></i>
+                        LinkedIn
+                    </a>
+                    <a class="button button-quiet" href="https://github.com/Heliacaa" target="_blank" rel="noopener noreferrer">
+                        <i class="fa-brands fa-github" aria-hidden="true"></i>
+                        GitHub
+                    </a>
+                </div>
             </div>
         </section>
     </main>
 
-    <footer>
-        <div class="container">
-            <p>&copy; 2026 Heliacaa. Tüm hakları saklıdır.</p>
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <span>&copy; <span id="current-year">2026</span> Beyazıt Tur</span>
+            <a href="#top">Back to top</a>
         </div>
     </footer>
 
